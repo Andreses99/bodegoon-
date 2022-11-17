@@ -7,7 +7,7 @@ const DescripitionProduct = ({product}) => {
 
   const [amount,setAmount]=useState(1);
   const {addItemToCart}=useContext(CartContext)
-  var route = "https://host-bodegoon.herokuapp.com/" + product.file_img;
+  var route = "http://localhost:3001/" + product.file_img;
 
   const Disamount=() => {
     if(amount!=1){

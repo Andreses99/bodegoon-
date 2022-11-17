@@ -15,11 +15,11 @@ import { ModalProductContext, ModalProductProvider } from "../../../context/Moda
   const {product}=useContext(ModalProductContext);
  useEffect(() => {
 
-  Axios.get("https://host-bodegoon.herokuapp.com/product/categories").then((response) => {
+  Axios.get("http://localhost:3001/product/categories").then((response) => {
     const categories = response.data.categories;
     setCategories(categories);
   });
-  Axios.get("https://host-bodegoon.herokuapp.com/product").then((response) => {
+  Axios.get("http://localhost:3001/product").then((response) => {
     const products = response.data.products;
     setProducts(products);
     setTimeout(() => {

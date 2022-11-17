@@ -21,7 +21,7 @@ const Login = () => {
   }, []);
 
   const logged = () => {
-    Axios.post("https://host-bodegoon.herokuapp.com/login", {
+    Axios.post("http://localhost:3001/login", {
       name_user: username,
       password: password,
     })  
@@ -60,7 +60,7 @@ const Login = () => {
     });
   };
 
-
+  
 
   return (
     <>

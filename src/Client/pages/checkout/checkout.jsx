@@ -19,7 +19,7 @@ const Checkout=()=>{
         e.preventDefault();
         if(cookies.get("username")){
 
-            Axios.post("https://host-bodegoon.herokuapp.com/payload",{cartItems:cartItems})
+            Axios.post("http://localhost:3001/payload",{cartItems:cartItems})
             .then(response=>{
                 setPreferenceId(response.data)
                 setCheckoutState({state:true})
