@@ -25,7 +25,7 @@ const Products = () => {
     formData.append("category", category);
     formData.append("myFile", upload.img_products);
 
-    Axios.post("http://localhost:3001/product", formData, {}).then(
+    Axios.post("https://host-bodegoon.herokuapp.com/product", formData, {}).then(
       (response) => {
         if (response.data.result) {
           window.location.href = "./products";
@@ -41,7 +41,7 @@ const Products = () => {
 
     console.log(products);
 
-    Axios.delete(`http://localhost:3001/product/${value}/${filename}`).then(
+    Axios.delete(`https://host-bodegoon.herokuapp.com/product/${value}/${filename}`).then(
       (response) => {}
     );
   };
@@ -56,10 +56,10 @@ const Products = () => {
   };
 
   useEffect(() => {
-    Axios.get("http://localhost:3001/product/categories").then((response) => {
+    Axios.get("https://host-bodegoon.herokuapp.com/product/categories").then((response) => {
       setCategories(response.data.categories);
     });
-    Axios.get("http://localhost:3001/product").then((response) => {
+    Axios.get("https://host-bodegoon.herokuapp.com/product").then((response) => {
       setProducts(response.data.products);
     });
   }, []);
@@ -86,6 +86,9 @@ const Products = () => {
                 key={index}
               >
                 <td className="table__tbody-actions">
+                  <button className="btn btn-primary">
+                    <i className="fas fa-arrows-rotate"></i>
+                  </button>
                   <button
                     className="btn btn-danger"
                     onClick={(e) => deleteProduct(value._id, value.file_img)}

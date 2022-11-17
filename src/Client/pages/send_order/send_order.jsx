@@ -24,7 +24,7 @@ const SendOrder=()=>{
         ? 
         (urlParams.get("preference_id")==localStorage.getItem("preferenceId")
             ?
-            (Axios.post("http://localhost:3001/payload/sendOrder",{
+            (Axios.post("https://host-bodegoon.herokuapp.com/payload/sendOrder",{
                 total:Total(),
                 cartItems:cartItems,
                 idUser:cookies.get("id")

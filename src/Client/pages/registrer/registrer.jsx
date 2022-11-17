@@ -18,7 +18,7 @@ const Registrer=()=>{
 
     const registrer=(e)=>{
         e.preventDefault();
-        Axios.post("http://localhost:3001/registrer",{
+        Axios.post("https://host-bodegoon.herokuapp.com/registrer",{
 
             name:name,
             email:email,

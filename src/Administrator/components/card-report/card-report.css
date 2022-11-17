@@ -1,0 +1,36 @@
+.cards-report{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap:20px;
+    margin:20px 0;
+
+}
+
+.card-report__container{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding:25px;
+    background-color: #fff;
+    box-sizing: border-box;
+    border: 1px solid #d2d2d3;
+    border-radius:5px;
+    box-shadow: 0 6px 7px -4px rgba(0,0,0,0.2);
+    border-left: 7px solid #009d63;
+    color:#009d63;
+    font-size:25px;
+
+}
+
+
+
+.card-report__inner{
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.card-report__inner > p{
+    font-size:18px;
+}
