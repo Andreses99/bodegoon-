@@ -1,0 +1,25 @@
+.container_table-products{
+    max-height: 500px;
+    overflow: scroll;
+}
+
+.table-products{
+    margin:0;
+    padding:0;
+    font-size: 20px;
+    font-family: 'Kanit', sans-serif;
+    
+}
+ 
+.table-products thead{
+    text-align: center;
+    background:#5cc7a0;
+    color:#fff;
+    
+}
+.table-products tbody{
+
+    color:#000;
+    text-align: center;
+   
+}

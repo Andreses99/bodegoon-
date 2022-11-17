@@ -1,0 +1,22 @@
+.container-list_orders{
+
+    
+    background-color: #fff;
+    margin-bottom: 2%;
+    padding: 2% 2%;
+    align-items: left;
+}
+.container-list_orders-title{
+
+    font-size:26px;
+}
+
+.container-list_orders-content{
+    width:100%;
+}
+
+.container-list_orders-title{
+
+    font-size: 22px;
+    padding-bottom: 10px;
+}

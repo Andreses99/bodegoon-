@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+
+
+.button_add{
+    margin:20px;
+    margin-bottom:50px;
+    
+}
+.button_add:hover{
+
+   background:#03f;
+    
+}
+
+.modal_addproduct{
+
+    transition: all 0.8s ease;
+}
+
+.table__tbody-actions button{
+    width:100px;
+    height:40px;
+    text-align: center;
+    padding:1px;
+    font-size:20px;
+}
+
+
+
+.form__div-input{
+    margin:20px;
+}
+
+
+
+.modal-header {
+    background-color:rgb(216, 130, 17);
+    color:#fff; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:30px;
+    font-weight:2.5rem;
+    line-height:1.5rem;
+}
+
+.modal-header .modal-title{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:25px;
+    font-weight:2.5rem;
+    line-height:1.5rem;
+
+}
+
+.modal-body{
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:15px;
+    font-weight:2.5rem;
+    line-height:1.5rem;
+
+}
+
+.form__div-input button{
+
+    width:100%;
+}
+
+
+ 
+
+

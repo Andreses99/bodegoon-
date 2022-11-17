@@ -1,0 +1,62 @@
+
+.container-general{
+    display:flex;
+    background-color:#eee;  
+    padding-top:5%;
+    min-height: 85vh;
+}
+.container-shopping_information{
+
+    
+    width:55%;
+    margin-right:auto;
+    margin-left:auto;
+    
+    display:inline-block;
+}
+
+.container-checkout{
+    width:30%;
+    height: 20%;
+    background-color: #fff;
+    margin-right:auto;
+    margin-left:auto;
+    padding:2% 3%;
+}
+
+.container-checkout_card-confirmation-title{
+    font-size:26px;
+    text-align: center;
+    margin-bottom: 5%;
+}
+.container-checkout_card-confirmation-total{
+    display:flex;
+    font-size:22px;
+    margin-bottom: 10%;
+}
+.container-checkout_card-confirmation-total-value{
+
+    width: 100%;
+    text-align:right;
+}
+.container-checkout_card-confirmation button{
+    width:100%;
+}
+
+@media (max-width: 770px){
+    .container-general{
+        display:block;
+        width:100%;
+        padding:2%;
+        
+    }
+    .container-shopping_information{
+        display:inline-block;
+        width: 100%;
+    }
+    .container-checkout{
+        margin-top:3%;
+        display:inline-block;
+        width:100%;
+    }
+}

@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter');
+
+
+
+
+
+.principal-container{
+  font-family: 'Inter' ;
+  font-size:100%;
+  font-size: 16px;
+
+  --button-primary: #04e;
+  --primary-blue:#233975;
+    padding:0;
+    margin:0;
+    font-weight: 600;
+    
+    display:flex;
+    flex-direction: column;
+    width:100%;
+}
+
+.principal-container__left h1{
+
+  font-size:2.25rem;
+  font-weight:700;
+}
+
+.container-form .container-form__contents h2{
+
+  font-size:1.5rem;
+  font-weight:700;
+}
+.container-form__contents .login-container a{
+
+  text-decoration:none;
+  color:var(--primary-blue);
+  
+}
+
+.container-form__contents .login-container a:hover{
+
+  text-decoration:underline;
+}
+
+
+
+.principal-container__left{
+
+  height:200px;
+}
+
+.principal-container__left, .container-form{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  
+  
+}
+.principal-container__left{
+
+  background:linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.5)),url("../../../img/about.jpg");
+  background-size: cover;
+}
+
+.principal-container__left-text{
+
+  color:white;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  letter-spacing:3px;
+}
+
+.principal-container__left{
+
+  font-weight:400;
+}
+
+.container-form .container-form__contents{
+
+   color:black;
+   text-align: center;
+}
+
+.container-form .container-form__contents p{
+
+  margin:1.5em 0;
+  
+}
+
+.container-form form{
+
+  width:375px;
+  border: 1px solid rgba(0,0,0,0.5);
+  border-top:0;
+  padding:10px;
+}
+
+.container-form form input{
+
+  display:block;
+  width:100%;
+  box-sizing: border-box;
+  padding:0.5em;
+  margin-bottom: 1.20rem;
+  font-size:0.875rem;
+
+}
+
+.container-form form label{
+
+  display:block;
+  margin-bottom:0.5rem;
+  
+}
+
+.input-container.password{
+
+  position: relative;
+}
+
+.input-container.password i{
+
+  position:absolute;
+  top:44px;
+  right:16px;
+}
+.signup-btn{
+
+  display:block;
+  width:100%;
+  background:var(--primary-blue);
+  color:white;
+  font-weight: 900;
+  border: none;
+  padding:1rem;
+  border-radius:8px;
+  text-transform: uppercase;
+  letter-spacing:0.5px;
+}
+
+.signup-btn:hover{
+
+  background: #2c4893;
+  cursor: pointer;
+
+}
+
+@media screen and (min-width: 930px){
+
+  .principal-container{
+
+    flex-direction: row;
+    height: 100vh;
+  }
+  .principal-container__left,.container-form{
+
+    display: flex;
+    width:50%;
+    height: auto ;
+
+  }
+  .container-form form{
+
+    border: 1px solid transparent;
+  }
+}
+
+
+
+
+
+

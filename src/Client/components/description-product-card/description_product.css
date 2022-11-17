@@ -1,0 +1,107 @@
+.modal__product-description{
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color: #111111bd;
+    display:flex;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.6s;
+    --transform: translateY(-100vh);
+    --transition: transform 0.8s;
+}
+
+.modal__product-description--show{
+    opacity: 1;
+    pointer-events: unset;
+    transition: opacity 0.6s;
+    --transform: translateY(0);
+    --transition: transform 0.6s .6s;  
+}
+
+.modal__product-description i{
+    position:absolute;
+    
+    width:40px;
+    height:40px;
+    place-items: center;
+    padding-top: 20px;
+    padding-left: 10px;
+    border-radius: 50%;
+   background-color: #766D6D;
+   color: #fff;   
+}
+
+.modal__product-description i{
+    cursor:pointer;
+}
+.modal__container{
+    width:90%;
+    background-color: #fff;   
+    margin: auto;   
+    max-height:90%;
+    border-radius: 6px;
+    padding:3em 2.5em;
+    display:flex;
+    gap:1em;
+    grid-auto-columns: 100%;
+    transform: var(--transform);
+    transition:var(--transition);
+}
+
+
+.modal__title{
+    font-size:34px;
+    display: inline-block;
+    width:100%;
+    
+}
+
+.modal__description{
+
+    font-size:20px;
+    color:gray;
+    text-align:justify;
+    margin-top:10%;
+}
+
+.modal__prize{
+    
+    margin: 15% 0;
+    font-size:25px;
+}
+.modal__prize .btn__amount{
+    background-color:#fff;
+    border:0;
+    width:35px;
+    height:35px;
+    font-size: 20px;
+    text-align:center;
+    border-radius:50%;
+    
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.modal__prize input{
+    width:15%;
+    height:30px;
+    border:0;
+    text-align:center;
+    padding-left :22px;
+    font-size:30px;
+    margin-left:3px;
+    margin-right:3px;
+}
+
+.btn__add{
+    margin-left:15px;
+    width:35%; 
+}
+
+.prize__product{
+
+    display:inline;
+    margin: 25px;
+}

@@ -1,0 +1,23 @@
+.container-card_direction{
+
+    background-color: #fff;
+    padding: 2% 2%;
+
+}
+
+.container-card_direction input{
+
+    margin : 5% 0;
+    width: 50% ;
+    height: 20%;
+    padding:2% 2%; 
+    outline: none;
+}
+
+.container-card_direction input:focus{
+
+    padding: 3% 5%;
+    border-color: #F09B06;
+    width: 80%;
+    transition:all 0.5s;    
+}

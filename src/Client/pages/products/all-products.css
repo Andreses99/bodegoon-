@@ -1,0 +1,183 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter');
+.container-products{
+    
+    width: 100%;
+    height: 100%;
+    margin:0;
+    padding:0;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Inter';
+    font-weight:400;        
+}
+
+ .sidebar-products{
+    text-align:center;
+    width: 15%;
+    height: 100%;
+    display: inline-block; 
+    position: -webkit-sticky;
+    position: sticky;
+    top:0;
+    margin: 0;
+    margin-bottom: 25px;
+}
+
+.sidebar-products h3{
+    margin-top:35px;
+    margin-bottom:5rem;
+}
+.sidebar-products ul li{
+
+    text-align:left;
+    list-style: none;
+    margin-bottom: 45px;
+}
+
+.sidebar-products ul li a{
+
+    text-decoration:none;
+    color:gray;
+    transition: all 0.4s;
+}
+
+.sidebar-products ul li a:hover{
+    color:#000;
+}
+
+.list-products{
+    display: inline-block;
+    width: 85%;
+    
+    padding: 20px;
+    margin:0; 
+    position: relative; 
+    
+}
+.list-products__content{
+    
+    padding-left:5%;
+    margin-top:20px;
+}
+
+
+
+.list-products__content h2{
+
+    
+    margin:20px;
+    margin-left:0;
+}
+
+.card-content{
+
+    display: flex;
+    width: 100%;
+    height: 100%;
+
+}
+
+.card-content:hover{
+
+    cursor:pointer;
+}
+.list-products__content-card{
+
+    width: 46%;
+    height: 170px;
+    display: inline-block;
+    margin-right: 30px; 
+    overflow:hidden;
+    margin-bottom:20px;
+    padding:0;
+}
+
+.list-products__content-card-img{
+    width:50%;
+    height:100%x
+    
+}
+
+.list-products__content-card-img img{
+    width:100%;
+    height: 100%;
+    object-fit:cover;
+}
+.list-products__content-card-info{
+    
+    height:100%;
+    width:50%;
+    padding-left:25px;
+       
+}
+
+.list-products__content-card_info-title{
+
+    font-size:15px;
+    
+    
+
+}
+.list-products__content-card_info-prize{
+
+    font-size: 40px;
+}
+
+.list-products__content-card_info-button{
+
+    width:100%;
+    background: #09f;
+    color:#fff;
+    
+    
+}
+
+@media(max-width: 1100px){
+    
+    .sidebar-products{
+
+        display:none;
+    }
+    .list-products{
+
+        width:100%;
+    }
+    
+
+    .list-products__content{
+
+        padding: 0;
+    }
+
+}
+
+
+@media(max-width:875px) and (min-width:765px){
+
+    .list-products__content-card{
+
+        width:100%;
+    }
+
+}
+@media(max-width:764px){
+
+    .list-products__content-card{
+
+        width:100%;
+    }
+
+
+
+}
+
+@media(max-width:1150px){
+
+    .list-products__content-card_info-prize{
+
+        font-size: 30px;
+    }
+}
+
+

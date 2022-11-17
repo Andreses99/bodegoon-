@@ -1,0 +1,112 @@
+
+.container-categories{
+
+    padding: 5% 0;
+    display: inline-block;
+    width: 100%;
+    background-image: url("../../../img/bg_1.jpg");
+    color: #fff;
+}
+.container-categories__h1{
+
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.container-categories__div-product{
+
+    margin:10px;
+    margin-left: 30px;
+    width: 30%;
+    height:300px;
+    border: 1px solid #000;
+    margin-bottom:1.5rem;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 0px 20px 25px rgba(0,0,0,0.50);
+    cursor:pointer;
+    transition-property: border-top-right-radius,border-bottom-left-radius;
+    transition: all 0.4s ease;
+    display: inline-block;
+    position:sticky
+}
+.container-categories__div-product figure{
+
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.container-categories__div-product figure img{
+    width:100%;
+    height:100%;
+    border-radius: 20px;
+    object-fit:cover;
+    transition: all 0.4s ease-out;
+   
+
+}
+
+.container-categories__div-product figure .name{
+    
+    position:absolute;
+    margin:120px 0;
+    font-size: 30px;
+    top:0;
+    width: 100%;
+    height: 50px;
+    background:rgba(144, 138, 138, 0.4) ;
+    border: medium double #fff;
+    transition: all 0.4s ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+    color:#fff;
+    border-radius: 20px;
+}
+.container-categories__div-product figure:hover >.name{
+    opacity:1;
+    visibility: visible;
+
+}
+@media(min-width:713px)and (max-width:1200px){
+    .container-categories__div-product figure .name{
+        
+        font-size: 18px;
+        
+    }
+    .container-categories__div-product {
+
+        width: 25%;
+        margin-left:3rem;
+    }
+    
+    
+
+}
+
+
+
+.container-categories__div-product:hover {
+
+     border-top-right-radius:20%;
+     border-bottom-left-radius:20%;   
+}
+
+@media(max-width: 713px){
+
+    .container-categories__div-product{
+        display:block;
+        width:95%;
+        margin: auto;
+        margin-bottom: 1rem;
+        transition-property: border-top-right-radius,border-bottom-left-radius;
+    }
+
+    .container-categories__div-product:hover {
+
+        border-top-right-radius:20%;
+        border-bottom-left-radius:20%;   
+   }
+    
+}
+
